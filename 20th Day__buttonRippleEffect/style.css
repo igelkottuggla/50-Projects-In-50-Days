@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -9,7 +9,45 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0;
   height: 100vh;
   overflow: hidden;
-  margin: 0;
+  background-color: #000;
+  font-family: 'Roboto', sans-serif;
+}
+
+.ripple {
+  position: relative;
+  padding: 20px 30px;
+  margin: 10px 0;
+  background-color: purple;
+  color: white;
+  border: 1px solid purple;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  overflow: hidden;
+}
+
+.ripple:focus {
+  outline: none;
+  box-shadow: 0 1px 6px 2px #856485de;
+}
+
+.ripple .circle {
+  position: absolute;
+  content: '';
+  background-color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: scale 0.5s ease-out;
+}
+
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
 }
