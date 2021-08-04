@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -12,4 +12,25 @@ body {
   margin: 0;
   height: 100vh;
   overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  background-color: darksalmon;
+}
+
+.speed-control {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  bottom: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+}
+
+input {
+  padding: 5px;
+  font-size: 18px;
+  width: 50px;
+  background-color: darksalmon;
+  border: none;
+  text-align: center;
 }
