@@ -1,16 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  background-color: #7bdaf3;
   margin: 0;
+}
+
+main {
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  width: calc(100% -40px);
+}
+
+.header {
+  display: flex;
+  padding: 1rem;
+  justify-content: flex-end;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #10c5f7;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+.add {
+  padding: 0.5rem 1rem;
+  background-color: #9ec862;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.notes-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.note {
+  margin: 30px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  height: 400px;
+  width: 400px;
+}
+
+.tools {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  background-color: #9ec862;
+}
+
+.tools button {
+  margin-right: 0.5rem;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.note textarea {
+  outline: none;
+  padding: 1rem;
+  font-family: inherit;
+  border: none;
+  font-size: 1.2rem;
+  height: 365px;
+  width: 100%;
+}
+
+.main {
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
 }
