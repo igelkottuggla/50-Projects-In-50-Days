@@ -4,10 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>My Project</title>
+    <title>Image Carousel</title>
   </head>
   <body>
-    <h1>Project Starter</h1>
+    <header></header>
+    <main>
+      <article class="carousel">
+        <div class="image-container" id="imgs">
+          <img src="https://images.unsplash.com/photo-1628193826226-a7c781daa6c1?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="sea">
+          <img src="https://images.unsplash.com/photo-1628373839877-3fdb444d1f54?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="road">
+          <img src="https://images.unsplash.com/photo-1628354215124-dd0ab72828ac?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="travel">
+          <img src="https://images.unsplash.com/photo-1628363948262-8baa532858f9?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3MHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="remember">
+          <img src="https://images.unsplash.com/photo-1628330565454-aa57f15ef3ee?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3NXx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="cities">
+        </div>
+        <div class="buttons-container">
+          <button id="left" class="btn">prev</button>
+          <button id="right" class="btn">next</button>
+        </div>
+      </article>
+    </main>
+    <footer></footer>
     <script src="script.js"></script>
   </body>
 </html>
