@@ -1,3 +1,4 @@
+'use strict';
 const content = document.querySelectorAll('.content');
 const listItems = document.querySelectorAll('.item');
 
