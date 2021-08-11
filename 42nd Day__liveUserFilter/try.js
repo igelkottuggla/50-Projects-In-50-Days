@@ -9,7 +9,6 @@ const url = 'https://randomuser.me/api?results=50';
 filter.addEventListener('input', (event) => filterData(event.target.value));
 
 getData();
-
 async function getData() {
     const response = await fetch(url);
     const { results } = await response.json();
@@ -23,6 +22,7 @@ async function getData() {
 
         const { large: image } = user.picture;
         const { first: name, last: surname } = user.name;
+        // const { last: surname } = user.name;
         const { city, country } = user.location;
         listItems.push(userEl);
         userEl.innerHTML = `
