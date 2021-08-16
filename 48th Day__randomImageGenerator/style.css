@@ -1,16 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    padding: 0 50px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.title {
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.amount-label {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.amount-input {
+    text-align: center;
+    font-family: inherit;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 2px solid rebeccapurple;
+}
+
+.btn {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 700;
+    background-color: rebeccapurple;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+img {
+    display: block;
+    margin: 10px;
+    object-fit: cover;
+    height: 300px;
+    width: 300px;
+    max-width: 100%;
+    border-radius: 5px;
 }
