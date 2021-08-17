@@ -4,10 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>My Project</title>
+    <title>ToDo List</title>
   </head>
   <body>
-    <h1>Project Starter</h1>
-    <script src="script.js"></script>
+      <header></header>
+      <main>
+          <h1>todos</h1>
+          <form class="form">
+              <label for="innut"></label>
+              <input type="text" class="input" id="input" placeholder="Enter your todo" autocomplete="off">
+
+              <ul class="todos-list">
+                  
+              </ul>
+          </form>
+          <p><small>Left click to toggle completed. Right click to delete todo</small></p>
+      </main>
+      <footer></footer>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
